@@ -1,0 +1,626 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="http://github.com/danielzzz/node-ping">ping (v0.2.2)</a>
+</h1>
+<h4>a simple wrapper for ping</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping">module ping</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.Gruntfile">
+            function <span class="apidocSignatureSpan">ping.</span>Gruntfile
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.promise.probe">
+            function <span class="apidocSignatureSpan">ping.</span>promise.probe
+            <span class="apidocSignatureSpan">(addr, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.sys.probe">
+            function <span class="apidocSignatureSpan">ping.</span>sys.probe
+            <span class="apidocSignatureSpan">(addr, cb, config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.</span>promise</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.</span>sys</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.Gruntfile">module ping.Gruntfile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.Gruntfile.Gruntfile">
+            function <span class="apidocSignatureSpan">ping.</span>Gruntfile
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.promise">module ping.promise</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.promise.probe">
+            function <span class="apidocSignatureSpan">ping.promise.</span>probe
+            <span class="apidocSignatureSpan">(addr, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.promise.probe">module ping.promise.probe</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.promise.probe.probe">
+            function <span class="apidocSignatureSpan">ping.promise.</span>probe
+            <span class="apidocSignatureSpan">(addr, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.sys">module ping.sys</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.sys.probe">
+            function <span class="apidocSignatureSpan">ping.sys.</span>probe
+            <span class="apidocSignatureSpan">(addr, cb, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.sys.probe">module ping.sys.probe</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.sys.probe.probe">
+            function <span class="apidocSignatureSpan">ping.sys.</span>probe
+            <span class="apidocSignatureSpan">(addr, cb, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping" id="apidoc.module.ping">module ping</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.Gruntfile" id="apidoc.element.ping.Gruntfile">
+        function <span class="apidocSignatureSpan">ping.</span>Gruntfile
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
+    grunt.initConfig({
+        eslint: {
+            src: ['lib/*.js', 'lib/**/*.js'],
+            options: {
+                configFile: '.eslintrc.json',
+            },
+        },
+        mochaTest: {
+            src: ['test/test-*.js'],
+            options: {
+                reporter: 'dot',
+            },
+        },
+    });
+
+    grunt.loadNpmTasks('gruntify-eslint');
+    grunt.loadNpmTasks('grunt-mocha-test');
+    grunt.registerTask('test', ['eslint', 'mochaTest']);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.promise.probe" id="apidoc.element.ping.promise.probe">
+        function <span class="apidocSignatureSpan">ping.</span>promise.probe
+        <span class="apidocSignatureSpan">(addr, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function probe(addr, config) {
+    // Do not reassign function argument
+    var _config = config || {};
+
+    // Convert callback base system command to promise base
+    var deferred = Q.defer();
+
+    // Spawn a ping process
+    var ping = null;
+    var platform = os.platform();
+    var argumentBuilder = builderFactory.createBuilder(platform);
+    ping = cp.spawn(
+        builderFactory.getExecutablePath(platform),
+        argumentBuilder.getResult(addr, _config)
+    );
+
+    // Initial parser
+    var parser = parserFactory.createParser(platform);
+
+    // Register events from system ping
+    ping.once('error', function () {
+        var err = new Error(
+            util.format(
+                'ping.probe: %s. %s',
+                'there was an error while executing the ping program. ',
+                'Check the path or permissions...'
+            )
+        );
+        deferred.reject(err);
+    });
+
+    // Cache all lines from the system ping
+    var outstring = [];
+    ping.stdout.on('data', function (data) {
+        outstring.push(String(data));
+    });
+
+    // Parse lines we have on closing system ping
+    ping.once('close', function () {
+        // Merge lines we have and split it by \n
+        var lines = outstring.join('').split('\n');
+
+        // Parse line one by one
+        __.each(lines, parser.eat, parser);
+
+        // Get result
+        var ret = parser.getResult();
+
+        deferred.resolve(ret);
+    });
+
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```js
+var ping = require('ping');
+
+var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
+
+hosts.forEach(function (host) {
+    ping.<span class="apidocCodeKeywordSpan">promise.probe</span>(host)
+        .then(function (res) {
+            console.log(res);
+        });
+});
+```
+
+##Promise Wrapper with configable ping options
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.sys.probe" id="apidoc.element.ping.sys.probe">
+        function <span class="apidocSignatureSpan">ping.</span>sys.probe
+        <span class="apidocSignatureSpan">(addr, cb, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function probe(addr, cb, config) {
+    // Do not reassign function parameter
+    var _config = config || {};
+
+    return ping.probe(addr, _config).then(function (res) {
+        cb(res.alive, null);
+    }).catch(function (err) {
+        cb(null, err);
+    }).done();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##Tradition calls
+
+```js
+var ping = require('ping');
+
+var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
+hosts.forEach(function(host){
+    ping.<span class="apidocCodeKeywordSpan">sys.probe</span>(host, function(isAlive){
+        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+        console.log(msg);
+    });
+});
+```
+
+##Tradition calls with configuration
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.Gruntfile" id="apidoc.module.ping.Gruntfile">module ping.Gruntfile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.Gruntfile.Gruntfile" id="apidoc.element.ping.Gruntfile.Gruntfile">
+        function <span class="apidocSignatureSpan">ping.</span>Gruntfile
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
+    grunt.initConfig({
+        eslint: {
+            src: ['lib/*.js', 'lib/**/*.js'],
+            options: {
+                configFile: '.eslintrc.json',
+            },
+        },
+        mochaTest: {
+            src: ['test/test-*.js'],
+            options: {
+                reporter: 'dot',
+            },
+        },
+    });
+
+    grunt.loadNpmTasks('gruntify-eslint');
+    grunt.loadNpmTasks('grunt-mocha-test');
+    grunt.registerTask('test', ['eslint', 'mochaTest']);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.promise" id="apidoc.module.ping.promise">module ping.promise</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.promise.probe" id="apidoc.element.ping.promise.probe">
+        function <span class="apidocSignatureSpan">ping.promise.</span>probe
+        <span class="apidocSignatureSpan">(addr, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function probe(addr, config) {
+    // Do not reassign function argument
+    var _config = config || {};
+
+    // Convert callback base system command to promise base
+    var deferred = Q.defer();
+
+    // Spawn a ping process
+    var ping = null;
+    var platform = os.platform();
+    var argumentBuilder = builderFactory.createBuilder(platform);
+    ping = cp.spawn(
+        builderFactory.getExecutablePath(platform),
+        argumentBuilder.getResult(addr, _config)
+    );
+
+    // Initial parser
+    var parser = parserFactory.createParser(platform);
+
+    // Register events from system ping
+    ping.once('error', function () {
+        var err = new Error(
+            util.format(
+                'ping.probe: %s. %s',
+                'there was an error while executing the ping program. ',
+                'Check the path or permissions...'
+            )
+        );
+        deferred.reject(err);
+    });
+
+    // Cache all lines from the system ping
+    var outstring = [];
+    ping.stdout.on('data', function (data) {
+        outstring.push(String(data));
+    });
+
+    // Parse lines we have on closing system ping
+    ping.once('close', function () {
+        // Merge lines we have and split it by \n
+        var lines = outstring.join('').split('\n');
+
+        // Parse line one by one
+        __.each(lines, parser.eat, parser);
+
+        // Get result
+        var ret = parser.getResult();
+
+        deferred.resolve(ret);
+    });
+
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##Tradition calls
+
+```js
+var ping = require('ping');
+
+var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
+hosts.forEach(function(host){
+    ping.sys.<span class="apidocCodeKeywordSpan">probe</span>(host, function(isAlive){
+        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+        console.log(msg);
+    });
+});
+```
+
+##Tradition calls with configuration
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.promise.probe" id="apidoc.module.ping.promise.probe">module ping.promise.probe</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.promise.probe.probe" id="apidoc.element.ping.promise.probe.probe">
+        function <span class="apidocSignatureSpan">ping.promise.</span>probe
+        <span class="apidocSignatureSpan">(addr, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function probe(addr, config) {
+    // Do not reassign function argument
+    var _config = config || {};
+
+    // Convert callback base system command to promise base
+    var deferred = Q.defer();
+
+    // Spawn a ping process
+    var ping = null;
+    var platform = os.platform();
+    var argumentBuilder = builderFactory.createBuilder(platform);
+    ping = cp.spawn(
+        builderFactory.getExecutablePath(platform),
+        argumentBuilder.getResult(addr, _config)
+    );
+
+    // Initial parser
+    var parser = parserFactory.createParser(platform);
+
+    // Register events from system ping
+    ping.once('error', function () {
+        var err = new Error(
+            util.format(
+                'ping.probe: %s. %s',
+                'there was an error while executing the ping program. ',
+                'Check the path or permissions...'
+            )
+        );
+        deferred.reject(err);
+    });
+
+    // Cache all lines from the system ping
+    var outstring = [];
+    ping.stdout.on('data', function (data) {
+        outstring.push(String(data));
+    });
+
+    // Parse lines we have on closing system ping
+    ping.once('close', function () {
+        // Merge lines we have and split it by \n
+        var lines = outstring.join('').split('\n');
+
+        // Parse line one by one
+        __.each(lines, parser.eat, parser);
+
+        // Get result
+        var ret = parser.getResult();
+
+        deferred.resolve(ret);
+    });
+
+    return deferred.promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##Tradition calls
+
+```js
+var ping = require('ping');
+
+var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
+hosts.forEach(function(host){
+    ping.sys.<span class="apidocCodeKeywordSpan">probe</span>(host, function(isAlive){
+        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+        console.log(msg);
+    });
+});
+```
+
+##Tradition calls with configuration
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.sys" id="apidoc.module.ping.sys">module ping.sys</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.sys.probe" id="apidoc.element.ping.sys.probe">
+        function <span class="apidocSignatureSpan">ping.sys.</span>probe
+        <span class="apidocSignatureSpan">(addr, cb, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function probe(addr, cb, config) {
+    // Do not reassign function parameter
+    var _config = config || {};
+
+    return ping.probe(addr, _config).then(function (res) {
+        cb(res.alive, null);
+    }).catch(function (err) {
+        cb(null, err);
+    }).done();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##Tradition calls
+
+```js
+var ping = require('ping');
+
+var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
+hosts.forEach(function(host){
+    ping.sys.<span class="apidocCodeKeywordSpan">probe</span>(host, function(isAlive){
+        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+        console.log(msg);
+    });
+});
+```
+
+##Tradition calls with configuration
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.sys.probe" id="apidoc.module.ping.sys.probe">module ping.sys.probe</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.sys.probe.probe" id="apidoc.element.ping.sys.probe.probe">
+        function <span class="apidocSignatureSpan">ping.sys.</span>probe
+        <span class="apidocSignatureSpan">(addr, cb, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function probe(addr, cb, config) {
+    // Do not reassign function parameter
+    var _config = config || {};
+
+    return ping.probe(addr, _config).then(function (res) {
+        cb(res.alive, null);
+    }).catch(function (err) {
+        cb(null, err);
+    }).done();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##Tradition calls
+
+```js
+var ping = require('ping');
+
+var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
+hosts.forEach(function(host){
+    ping.sys.<span class="apidocCodeKeywordSpan">probe</span>(host, function(isAlive){
+        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
+        console.log(msg);
+    });
+});
+```
+
+##Tradition calls with configuration
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
