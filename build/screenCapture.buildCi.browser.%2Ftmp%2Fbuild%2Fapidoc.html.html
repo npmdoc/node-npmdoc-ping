@@ -56,28 +56,37 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.ping.Gruntfile">
-            function <span class="apidocSignatureSpan">ping.</span>Gruntfile
-            <span class="apidocSignatureSpan">(grunt)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base">
+            function <span class="apidocSignatureSpan">ping.</span>base
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.ping.promise.probe">
-            function <span class="apidocSignatureSpan">ping.</span>promise.probe
-            <span class="apidocSignatureSpan">(addr, config)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory">
+            function <span class="apidocSignatureSpan">ping.</span>factory
+            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.ping.sys.probe">
-            function <span class="apidocSignatureSpan">ping.</span>sys.probe
-            <span class="apidocSignatureSpan">(addr, cb, config)</span>
-            </a>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.</span>base.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.</span>linux</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.</span>mac</span>
 
         </li>
 
@@ -93,15 +102,178 @@
 
         </li>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.</span>win</span>
+
+        </li>
+
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.ping.Gruntfile">module ping.Gruntfile</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.base">module ping.base</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.ping.Gruntfile.Gruntfile">
-            function <span class="apidocSignatureSpan">ping.</span>Gruntfile
-            <span class="apidocSignatureSpan">(grunt)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.base">
+            function <span class="apidocSignatureSpan">ping.</span>base
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.base.prototype">module ping.base.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.prototype._changeState">
+            function <span class="apidocSignatureSpan">ping.base.prototype.</span>_changeState
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.prototype._processBody">
+            function <span class="apidocSignatureSpan">ping.base.prototype.</span>_processBody
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.prototype._processFooter">
+            function <span class="apidocSignatureSpan">ping.base.prototype.</span>_processFooter
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.prototype._processHeader">
+            function <span class="apidocSignatureSpan">ping.base.prototype.</span>_processHeader
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.prototype.eat">
+            function <span class="apidocSignatureSpan">ping.base.prototype.</span>eat
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.base.prototype.getResult">
+            function <span class="apidocSignatureSpan">ping.base.prototype.</span>getResult
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ping.base.prototype.</span>STATES</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.factory">module ping.factory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.factory">
+            function <span class="apidocSignatureSpan">ping.</span>factory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.createBuilder">
+            function <span class="apidocSignatureSpan">ping.factory.</span>createBuilder
+            <span class="apidocSignatureSpan">(platform)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.getExecutablePath">
+            function <span class="apidocSignatureSpan">ping.factory.</span>getExecutablePath
+            <span class="apidocSignatureSpan">(platform)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.isLinux">
+            function <span class="apidocSignatureSpan">ping.factory.</span>isLinux
+            <span class="apidocSignatureSpan">(p)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.isMacOS">
+            function <span class="apidocSignatureSpan">ping.factory.</span>isMacOS
+            <span class="apidocSignatureSpan">(p)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.isPlatformSupport">
+            function <span class="apidocSignatureSpan">ping.factory.</span>isPlatformSupport
+            <span class="apidocSignatureSpan">(p)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.factory.isWindow">
+            function <span class="apidocSignatureSpan">ping.factory.</span>isWindow
+            <span class="apidocSignatureSpan">(p)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.linux">module ping.linux</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.linux.getResult">
+            function <span class="apidocSignatureSpan">ping.linux.</span>getResult
+            <span class="apidocSignatureSpan">(target, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.mac">module ping.mac</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ping.mac.getResult">
+            function <span class="apidocSignatureSpan">ping.mac.</span>getResult
+            <span class="apidocSignatureSpan">(target, config)</span>
             </a>
 
         </li>
@@ -113,19 +285,6 @@
         <li>
 
             <a class="apidocElementLiA" href="#apidoc.element.ping.promise.probe">
-            function <span class="apidocSignatureSpan">ping.promise.</span>probe
-            <span class="apidocSignatureSpan">(addr, config)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.ping.promise.probe">module ping.promise.probe</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.ping.promise.probe.probe">
             function <span class="apidocSignatureSpan">ping.promise.</span>probe
             <span class="apidocSignatureSpan">(addr, config)</span>
             </a>
@@ -147,13 +306,13 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.ping.sys.probe">module ping.sys.probe</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.ping.win">module ping.win</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.ping.sys.probe.probe">
-            function <span class="apidocSignatureSpan">ping.sys.</span>probe
-            <span class="apidocSignatureSpan">(addr, cb, config)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.ping.win.getResult">
+            function <span class="apidocSignatureSpan">ping.win.</span>getResult
+            <span class="apidocSignatureSpan">(target, config)</span>
             </a>
 
         </li>
@@ -167,31 +326,36 @@
 
 
     <h2>
-        <a href="#apidoc.element.ping.Gruntfile" id="apidoc.element.ping.Gruntfile">
-        function <span class="apidocSignatureSpan">ping.</span>Gruntfile
-        <span class="apidocSignatureSpan">(grunt)</span>
+        <a href="#apidoc.element.ping.base" id="apidoc.element.ping.base">
+        function <span class="apidocSignatureSpan">ping.</span>base
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
-    grunt.initConfig({
-        eslint: {
-            src: ['lib/*.js', 'lib/**/*.js'],
-            options: {
-                configFile: '.eslintrc.json',
-            },
-        },
-        mochaTest: {
-            src: ['test/test-*.js'],
-            options: {
-                reporter: 'dot',
-            },
-        },
-    });
+    <li>description and source-code<pre class="apidocCodePre">function parser() {
+    // Initial state is 0
+    this._state = 0;
 
-    grunt.loadNpmTasks('gruntify-eslint');
-    grunt.loadNpmTasks('grunt-mocha-test');
-    grunt.registerTask('test', ['eslint', 'mochaTest']);
+    // Initial cache value
+    this._response = {
+        host: 'unknown',
+        alive: false,
+        output: 'unknown',
+        time: 'unknown',
+        min: 'unknown',
+        max: 'unknown',
+        avg: 'unknown',
+        stddev: 'unknown',
+    };
+
+    // Initial times storage for ping time
+    this._times = [];
+
+    // Initial lines storage for ping output
+    this._lines = [];
+
+    // strip string regexp
+    this._stripRegex = /[ ]*\r?\n?$/g;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -199,121 +363,23 @@
 
 
     <h2>
-        <a href="#apidoc.element.ping.promise.probe" id="apidoc.element.ping.promise.probe">
-        function <span class="apidocSignatureSpan">ping.</span>promise.probe
-        <span class="apidocSignatureSpan">(addr, config)</span>
+        <a href="#apidoc.element.ping.factory" id="apidoc.element.ping.factory">
+        function <span class="apidocSignatureSpan">ping.</span>factory
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function probe(addr, config) {
-    // Do not reassign function argument
-    var _config = config || {};
-
-    // Convert callback base system command to promise base
-    var deferred = Q.defer();
-
-    // Spawn a ping process
-    var ping = null;
-    var platform = os.platform();
-    var argumentBuilder = builderFactory.createBuilder(platform);
-    ping = cp.spawn(
-        builderFactory.getExecutablePath(platform),
-        argumentBuilder.getResult(addr, _config)
-    );
-
-    // Initial parser
-    var parser = parserFactory.createParser(platform);
-
-    // Register events from system ping
-    ping.once('error', function () {
-        var err = new Error(
-            util.format(
-                'ping.probe: %s. %s',
-                'there was an error while executing the ping program. ',
-                'Check the path or permissions...'
-            )
-        );
-        deferred.reject(err);
-    });
-
-    // Cache all lines from the system ping
-    var outstring = [];
-    ping.stdout.on('data', function (data) {
-        outstring.push(String(data));
-    });
-
-    // Parse lines we have on closing system ping
-    ping.once('close', function () {
-        // Merge lines we have and split it by \n
-        var lines = outstring.join('').split('\n');
-
-        // Parse line one by one
-        __.each(lines, parser.eat, parser);
-
-        // Get result
-        var ret = parser.getResult();
-
-        deferred.resolve(ret);
-    });
-
-    return deferred.promise;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-```js
-var ping = require('ping');
-
-var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
-
-hosts.forEach(function (host) {
-    ping.<span class="apidocCodeKeywordSpan">promise.probe</span>(host)
-        .then(function (res) {
-            console.log(res);
-        });
-});
-```
-
-##Promise Wrapper with configable ping options
-...</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function factory() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
 
-    <h2>
-        <a href="#apidoc.element.ping.sys.probe" id="apidoc.element.ping.sys.probe">
-        function <span class="apidocSignatureSpan">ping.</span>sys.probe
-        <span class="apidocSignatureSpan">(addr, cb, config)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function probe(addr, cb, config) {
-    // Do not reassign function parameter
-    var _config = config || {};
 
-    return ping.probe(addr, _config).then(function (res) {
-        cb(res.alive, null);
-    }).catch(function (err) {
-        cb(null, err);
-    }).done();
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-##Tradition calls
 
-```js
-var ping = require('ping');
 
-var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
-hosts.forEach(function(host){
-    ping.<span class="apidocCodeKeywordSpan">sys.probe</span>(host, function(isAlive){
-        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
-        console.log(msg);
-    });
-});
-```
 
-##Tradition calls with configuration
-...</pre></li>
-    </ul>
+
 
 
 
@@ -323,37 +389,683 @@ hosts.forEach(function(host){
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.ping.Gruntfile" id="apidoc.module.ping.Gruntfile">module ping.Gruntfile</a></h1>
+<h1><a href="#apidoc.module.ping.base" id="apidoc.module.ping.base">module ping.base</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.ping.Gruntfile.Gruntfile" id="apidoc.element.ping.Gruntfile.Gruntfile">
-        function <span class="apidocSignatureSpan">ping.</span>Gruntfile
-        <span class="apidocSignatureSpan">(grunt)</span>
+        <a href="#apidoc.element.ping.base.base" id="apidoc.element.ping.base.base">
+        function <span class="apidocSignatureSpan">ping.</span>base
+        <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
-    grunt.initConfig({
-        eslint: {
-            src: ['lib/*.js', 'lib/**/*.js'],
-            options: {
-                configFile: '.eslintrc.json',
-            },
-        },
-        mochaTest: {
-            src: ['test/test-*.js'],
-            options: {
-                reporter: 'dot',
-            },
-        },
-    });
+    <li>description and source-code<pre class="apidocCodePre">function parser() {
+    // Initial state is 0
+    this._state = 0;
 
-    grunt.loadNpmTasks('gruntify-eslint');
-    grunt.loadNpmTasks('grunt-mocha-test');
-    grunt.registerTask('test', ['eslint', 'mochaTest']);
+    // Initial cache value
+    this._response = {
+        host: 'unknown',
+        alive: false,
+        output: 'unknown',
+        time: 'unknown',
+        min: 'unknown',
+        max: 'unknown',
+        avg: 'unknown',
+        stddev: 'unknown',
+    };
+
+    // Initial times storage for ping time
+    this._times = [];
+
+    // Initial lines storage for ping output
+    this._lines = [];
+
+    // strip string regexp
+    this._stripRegex = /[ ]*\r?\n?$/g;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.base.prototype" id="apidoc.module.ping.base.prototype">module ping.base.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.base.prototype._changeState" id="apidoc.element.ping.base.prototype._changeState">
+        function <span class="apidocSignatureSpan">ping.base.prototype.</span>_changeState
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_changeState = function (state) {
+    var states = __.values(this.STATES);
+    if (states.indexOf(state) &lt; 0) {
+        throw new Error('Unknown state');
+    }
+
+    this._state = state;
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+LinuxParser.prototype._processHeader = function (line) {
+    // Get host and numeric_host
+    var tokens = line.split(' ');
+
+    this._response.host = tokens[1];
+    this._response.numeric_host = tokens[2].slice(1, -1);
+
+    this.<span class="apidocCodeKeywordSpan">_changeState</span>(this.STATES.BODY);
+};
+
+/**
+ * Process output's body
+ * @param {string} line - A line from system ping
+ */
+LinuxParser.prototype._processBody = function (line) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.base.prototype._processBody" id="apidoc.element.ping.base.prototype._processBody">
+        function <span class="apidocSignatureSpan">ping.base.prototype.</span>_processBody
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_processBody = function (line) {
+    throw new Error('Subclass should implement this method');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var _line = line.replace(this._stripRegex, '');
+
+if (_line.length === 0) {
+    // Do nothing if this is an empty line
+} else if (headerStates.indexOf(this._state) &gt;= 0) {
+    this._processHeader(_line);
+} else if (this._state === this.STATES.BODY) {
+    this.<span class="apidocCodeKeywordSpan">_processBody</span>(_line);
+} else if (this._state === this.STATES.FOOTER) {
+    this._processFooter(_line);
+} else if (this._state === this.STATES.END) {
+    // Do nothing
+} else {
+    throw new Error('Unknown state');
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.base.prototype._processFooter" id="apidoc.element.ping.base.prototype._processFooter">
+        function <span class="apidocSignatureSpan">ping.base.prototype.</span>_processFooter
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_processFooter = function (line) {
+    throw new Error('Subclass should implement this method');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (_line.length === 0) {
+    // Do nothing if this is an empty line
+} else if (headerStates.indexOf(this._state) &gt;= 0) {
+    this._processHeader(_line);
+} else if (this._state === this.STATES.BODY) {
+    this._processBody(_line);
+} else if (this._state === this.STATES.FOOTER) {
+    this.<span class="apidocCodeKeywordSpan">_processFooter</span>(_line);
+} else if (this._state === this.STATES.END) {
+    // Do nothing
+} else {
+    throw new Error('Unknown state');
+}
+
+return this;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.base.prototype._processHeader" id="apidoc.element.ping.base.prototype._processHeader">
+        function <span class="apidocSignatureSpan">ping.base.prototype.</span>_processHeader
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_processHeader = function (line) {
+    throw new Error('Subclass should implement this method');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Strip all space \r\n at the end
+var _line = line.replace(this._stripRegex, '');
+
+if (_line.length === 0) {
+    // Do nothing if this is an empty line
+} else if (headerStates.indexOf(this._state) &gt;= 0) {
+    this.<span class="apidocCodeKeywordSpan">_processHeader</span>(_line);
+} else if (this._state === this.STATES.BODY) {
+    this._processBody(_line);
+} else if (this._state === this.STATES.FOOTER) {
+    this._processFooter(_line);
+} else if (this._state === this.STATES.END) {
+    // Do nothing
+} else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.base.prototype.eat" id="apidoc.element.ping.base.prototype.eat">
+        function <span class="apidocSignatureSpan">ping.base.prototype.</span>eat
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">eat = function (line) {
+    var headerStates = [
+        this.STATES.INIT,
+        this.STATES.HEADER,
+    ];
+
+    // Store lines
+    this._lines.push(line);
+
+    // Strip all space \r\n at the end
+    var _line = line.replace(this._stripRegex, '');
+
+    if (_line.length === 0) {
+        // Do nothing if this is an empty line
+    } else if (headerStates.indexOf(this._state) &gt;= 0) {
+        this._processHeader(_line);
+    } else if (this._state === this.STATES.BODY) {
+        this._processBody(_line);
+    } else if (this._state === this.STATES.FOOTER) {
+        this._processFooter(_line);
+    } else if (this._state === this.STATES.END) {
+        // Do nothing
+    } else {
+        throw new Error('Unknown state');
+    }
+
+    return this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.base.prototype.getResult" id="apidoc.element.ping.base.prototype.getResult">
+        function <span class="apidocSignatureSpan">ping.base.prototype.</span>getResult
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getResult = function () {
+    var ret = __.extend({}, this._response);
+
+    // Concat output
+    ret.output = this._lines.join('\n');
+
+    // Determine alive
+    ret.alive = this._times.length &gt; 0;
+
+    // Update time at first successful line
+    if (ret.alive) {
+        ret.time = this._response.time = this._times[0];
+    }
+
+    // Get stddev
+    if (
+        ret.stddev === 'unknown' &amp;&amp; ret.alive
+    ) {
+        var N = this._times.length;
+
+        var variances = __.reduce(this._times, function (m, time) {
+            return m + Math.pow((time - ret.avg), 2);
+        }, 0) / N;
+
+        ret.stddev = Math.round(
+            Math.sqrt(variances) * 1000
+        ) / 1000;
+    }
+
+    // Fix min, avg, max, stddev up to 3 decimal points
+    __.each(['min', 'avg', 'max', 'stddev'], function (key) {
+        var v = ret[key];
+        if (__.isNumber(v)) {
+            ret[key] = v.toFixed(3);
+        }
+    });
+
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Spawn a ping process
+var ping = null;
+var platform = os.platform();
+var argumentBuilder = builderFactory.createBuilder(platform);
+ping = cp.spawn(
+    builderFactory.getExecutablePath(platform),
+    argumentBuilder.<span class="apidocCodeKeywordSpan">getResult</span>(addr, _config)
+);
+
+// Initial parser
+var parser = parserFactory.createParser(platform);
+
+// Register events from system ping
+ping.once('error', function () {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.factory" id="apidoc.module.ping.factory">module ping.factory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.factory" id="apidoc.element.ping.factory.factory">
+        function <span class="apidocSignatureSpan">ping.</span>factory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function factory() {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.createBuilder" id="apidoc.element.ping.factory.createBuilder">
+        function <span class="apidocSignatureSpan">ping.factory.</span>createBuilder
+        <span class="apidocSignatureSpan">(platform)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createBuilder = function (platform) {
+    if (!this.isPlatformSupport(platform)) {
+        throw new Error(util.format('Platform |%s| is not support', platform));
+    }
+
+    var ret = null;
+
+    if (factory.isLinux(platform)) {
+        ret = linuxBuilder;
+    } else if (factory.isWindow(platform)) {
+        ret = winBuilder;
+    } else if (factory.isMacOS(platform)) {
+        ret = macBuilder;
+    }
+
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Convert callback base system command to promise base
+var deferred = Q.defer();
+
+// Spawn a ping process
+var ping = null;
+var platform = os.platform();
+var argumentBuilder = builderFactory.<span class="apidocCodeKeywordSpan">createBuilder</span>(platform);
+ping = cp.spawn(
+    builderFactory.getExecutablePath(platform),
+    argumentBuilder.getResult(addr, _config)
+);
+
+// Initial parser
+var parser = parserFactory.createParser(platform);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.getExecutablePath" id="apidoc.element.ping.factory.getExecutablePath">
+        function <span class="apidocSignatureSpan">ping.factory.</span>getExecutablePath
+        <span class="apidocSignatureSpan">(platform)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getExecutablePath = function (platform) {
+    if (!this.isPlatformSupport(platform)) {
+        throw new Error(util.format('Platform |%s| is not support', platform));
+    }
+
+    var ret = null;
+
+    if (platform === 'aix') {
+        ret = '/usr/sbin/ping';
+    } else if (factory.isLinux(platform)) {
+        ret = '/bin/ping';
+    } else if (factory.isWindow(platform)) {
+        ret = process.env.SystemRoot + '/system32/ping.exe';
+    } else if (factory.isMacOS(platform)) {
+        ret = '/sbin/ping';
+    }
+
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var deferred = Q.defer();
+
+// Spawn a ping process
+var ping = null;
+var platform = os.platform();
+var argumentBuilder = builderFactory.createBuilder(platform);
+ping = cp.spawn(
+    builderFactory.<span class="apidocCodeKeywordSpan">getExecutablePath</span>(platform),
+    argumentBuilder.getResult(addr, _config)
+);
+
+// Initial parser
+var parser = parserFactory.createParser(platform);
+
+// Register events from system ping
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.isLinux" id="apidoc.element.ping.factory.isLinux">
+        function <span class="apidocSignatureSpan">ping.factory.</span>isLinux
+        <span class="apidocSignatureSpan">(p)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isLinux = function (p) {
+    var platforms = [
+        'aix',
+        'linux',
+    ];
+
+    return platforms.indexOf(p) &gt;= 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Check whether given platform is supported
+* @param {string} p - Name of the platform
+* @return {bool} - True or False
+*/
+factory.isPlatformSupport = function (p) {
+   return __.some([
+       this.isWindow(p),
+       this.<span class="apidocCodeKeywordSpan">isLinux</span>(p),
+       this.isMacOS(p),
+   ]);
+};
+
+/**
+* Return a path to the ping executable in the system
+* @param {string} platform - Name of the platform
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.isMacOS" id="apidoc.element.ping.factory.isMacOS">
+        function <span class="apidocSignatureSpan">ping.factory.</span>isMacOS
+        <span class="apidocSignatureSpan">(p)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isMacOS = function (p) {
+    var platforms = [
+        'darwin',
+        'freebsd',
+    ];
+
+    return platforms.indexOf(p) &gt;= 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* @param {string} p - Name of the platform
+* @return {bool} - True or False
+*/
+factory.isPlatformSupport = function (p) {
+   return __.some([
+       this.isWindow(p),
+       this.isLinux(p),
+       this.<span class="apidocCodeKeywordSpan">isMacOS</span>(p),
+   ]);
+};
+
+/**
+* Return a path to the ping executable in the system
+* @param {string} platform - Name of the platform
+* @return {object} - Argument builder
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.isPlatformSupport" id="apidoc.element.ping.factory.isPlatformSupport">
+        function <span class="apidocSignatureSpan">ping.factory.</span>isPlatformSupport
+        <span class="apidocSignatureSpan">(p)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isPlatformSupport = function (p) {
+    return __.some([
+        this.isWindow(p),
+        this.isLinux(p),
+        this.isMacOS(p),
+    ]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+ * Return a path to the ping executable in the system
+ * @param {string} platform - Name of the platform
+ * @return {object} - Argument builder
+ * @throw if given platform is not supported
+ */
+factory.getExecutablePath = function (platform) {
+if (!this.<span class="apidocCodeKeywordSpan">isPlatformSupport</span>(platform)) {
+    throw new Error(util.format('Platform |%s| is not support', platform));
+}
+
+var ret = null;
+
+if (platform === 'aix') {
+    ret = '/usr/sbin/ping';
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ping.factory.isWindow" id="apidoc.element.ping.factory.isWindow">
+        function <span class="apidocSignatureSpan">ping.factory.</span>isWindow
+        <span class="apidocSignatureSpan">(p)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isWindow = function (p) {
+    return p &amp;&amp; p.match(/^win/) !== null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+/**
+* Check whether given platform is supported
+* @param {string} p - Name of the platform
+* @return {bool} - True or False
+*/
+factory.isPlatformSupport = function (p) {
+   return __.some([
+       this.<span class="apidocCodeKeywordSpan">isWindow</span>(p),
+       this.isLinux(p),
+       this.isMacOS(p),
+   ]);
+};
+
+/**
+* Return a path to the ping executable in the system
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.linux" id="apidoc.module.ping.linux">module ping.linux</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.linux.getResult" id="apidoc.element.ping.linux.getResult">
+        function <span class="apidocSignatureSpan">ping.linux.</span>getResult
+        <span class="apidocSignatureSpan">(target, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getResult = function (target, config) {
+    var _config = config || {};
+
+    // Empty argument
+    var ret = [];
+
+    // Make every key in config has been setup properly
+    var keys = ['numeric', 'timeout', 'min_reply', 'extra'];
+    keys.forEach(function (k) {
+        // Falsy value will be overrided without below checking
+        if (typeof(_config[k]) !== 'boolean') {
+            _config[k] = _config[k] || defaultConfig[k];
+        }
+    });
+
+    if (_config.numeric) {
+        ret.push('-n');
+    }
+
+    if (_config.timeout) {
+        ret = ret.concat([
+            '-w',
+            util.format('%d', _config.timeout),
+        ]);
+    }
+
+    if (_config.min_reply) {
+        ret = ret.concat([
+            '-c',
+            util.format('%d', _config.min_reply),
+        ]);
+    }
+
+    if (_config.extra) {
+        ret = ret.concat(_config.extra);
+    }
+
+    ret.push(target);
+
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Spawn a ping process
+var ping = null;
+var platform = os.platform();
+var argumentBuilder = builderFactory.createBuilder(platform);
+ping = cp.spawn(
+    builderFactory.getExecutablePath(platform),
+    argumentBuilder.<span class="apidocCodeKeywordSpan">getResult</span>(addr, _config)
+);
+
+// Initial parser
+var parser = parserFactory.createParser(platform);
+
+// Register events from system ping
+ping.once('error', function () {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ping.mac" id="apidoc.module.ping.mac">module ping.mac</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ping.mac.getResult" id="apidoc.element.ping.mac.getResult">
+        function <span class="apidocSignatureSpan">ping.mac.</span>getResult
+        <span class="apidocSignatureSpan">(target, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getResult = function (target, config) {
+    var _config = config || {};
+
+    // Empty argument
+    var ret = [];
+
+    // Make every key in config has been setup properly
+    var keys = ['numeric', 'timeout', 'min_reply', 'extra'];
+    keys.forEach(function (k) {
+        // Falsy value will be overrided without below checking
+        if (typeof(_config[k]) !== 'boolean') {
+            _config[k] = _config[k] || defaultConfig[k];
+        }
+    });
+
+    if (_config.numeric) {
+        ret.push('-n');
+    }
+
+    if (_config.timeout) {
+        ret = ret.concat([
+            '-t',
+            util.format('%d', _config.timeout),
+        ]);
+    }
+
+    if (_config.min_reply) {
+        ret = ret.concat([
+            '-c',
+            util.format('%d', _config.min_reply),
+        ]);
+    }
+
+    if (_config.extra) {
+        ret = ret.concat(_config.extra);
+    }
+
+    ret.push(target);
+
+    return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Spawn a ping process
+var ping = null;
+var platform = os.platform();
+var argumentBuilder = builderFactory.createBuilder(platform);
+ping = cp.spawn(
+    builderFactory.getExecutablePath(platform),
+    argumentBuilder.<span class="apidocCodeKeywordSpan">getResult</span>(addr, _config)
+);
+
+// Initial parser
+var parser = parserFactory.createParser(platform);
+
+// Register events from system ping
+ping.once('error', function () {
+...</pre></li>
     </ul>
 
 
@@ -365,92 +1077,6 @@ hosts.forEach(function(host){
 
     <h2>
         <a href="#apidoc.element.ping.promise.probe" id="apidoc.element.ping.promise.probe">
-        function <span class="apidocSignatureSpan">ping.promise.</span>probe
-        <span class="apidocSignatureSpan">(addr, config)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function probe(addr, config) {
-    // Do not reassign function argument
-    var _config = config || {};
-
-    // Convert callback base system command to promise base
-    var deferred = Q.defer();
-
-    // Spawn a ping process
-    var ping = null;
-    var platform = os.platform();
-    var argumentBuilder = builderFactory.createBuilder(platform);
-    ping = cp.spawn(
-        builderFactory.getExecutablePath(platform),
-        argumentBuilder.getResult(addr, _config)
-    );
-
-    // Initial parser
-    var parser = parserFactory.createParser(platform);
-
-    // Register events from system ping
-    ping.once('error', function () {
-        var err = new Error(
-            util.format(
-                'ping.probe: %s. %s',
-                'there was an error while executing the ping program. ',
-                'Check the path or permissions...'
-            )
-        );
-        deferred.reject(err);
-    });
-
-    // Cache all lines from the system ping
-    var outstring = [];
-    ping.stdout.on('data', function (data) {
-        outstring.push(String(data));
-    });
-
-    // Parse lines we have on closing system ping
-    ping.once('close', function () {
-        // Merge lines we have and split it by \n
-        var lines = outstring.join('').split('\n');
-
-        // Parse line one by one
-        __.each(lines, parser.eat, parser);
-
-        // Get result
-        var ret = parser.getResult();
-
-        deferred.resolve(ret);
-    });
-
-    return deferred.promise;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-##Tradition calls
-
-```js
-var ping = require('ping');
-
-var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
-hosts.forEach(function(host){
-    ping.sys.<span class="apidocCodeKeywordSpan">probe</span>(host, function(isAlive){
-        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
-        console.log(msg);
-    });
-});
-```
-
-##Tradition calls with configuration
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.ping.promise.probe" id="apidoc.module.ping.promise.probe">module ping.promise.probe</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.ping.promise.probe.probe" id="apidoc.element.ping.promise.probe.probe">
         function <span class="apidocSignatureSpan">ping.promise.</span>probe
         <span class="apidocSignatureSpan">(addr, config)</span>
         </a>
@@ -575,42 +1201,76 @@ hosts.forEach(function(host){
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.ping.sys.probe" id="apidoc.module.ping.sys.probe">module ping.sys.probe</a></h1>
+<h1><a href="#apidoc.module.ping.win" id="apidoc.module.ping.win">module ping.win</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.ping.sys.probe.probe" id="apidoc.element.ping.sys.probe.probe">
-        function <span class="apidocSignatureSpan">ping.sys.</span>probe
-        <span class="apidocSignatureSpan">(addr, cb, config)</span>
+        <a href="#apidoc.element.ping.win.getResult" id="apidoc.element.ping.win.getResult">
+        function <span class="apidocSignatureSpan">ping.win.</span>getResult
+        <span class="apidocSignatureSpan">(target, config)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function probe(addr, cb, config) {
-    // Do not reassign function parameter
+    <li>description and source-code<pre class="apidocCodePre">getResult = function (target, config) {
     var _config = config || {};
 
-    return ping.probe(addr, _config).then(function (res) {
-        cb(res.alive, null);
-    }).catch(function (err) {
-        cb(null, err);
-    }).done();
+    // Empty argument
+    var ret = [];
+
+    // Make every key in config has been setup properly
+    var keys = ['numeric', 'timeout', 'min_reply', 'extra'];
+    keys.forEach(function (k) {
+        // Falsy value will be overrided without below checking
+        if (typeof(_config[k]) !== 'boolean') {
+            _config[k] = _config[k] || defaultConfig[k];
+        }
+    });
+
+    if (!_config.numeric) {
+        ret.push('-a');
+    }
+
+    if (_config.timeout) {
+        // refs #56: Unit problem
+        // Our timeout is in second while timeout in window is in milliseconds
+        // so we need to convert our units accordingly
+        ret = ret.concat([
+            '-w',
+            util.format('%d', _config.timeout * 1000),
+        ]);
+    }
+
+    if (_config.min_reply) {
+        ret = ret.concat([
+            '-n',
+            util.format('%d', _config.min_reply),
+        ]);
+    }
+
+    if (_config.extra) {
+        ret = ret.concat(_config.extra);
+    }
+
+    ret.push(target);
+
+    return ret;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-##Tradition calls
 
-```js
-var ping = require('ping');
+// Spawn a ping process
+var ping = null;
+var platform = os.platform();
+var argumentBuilder = builderFactory.createBuilder(platform);
+ping = cp.spawn(
+    builderFactory.getExecutablePath(platform),
+    argumentBuilder.<span class="apidocCodeKeywordSpan">getResult</span>(addr, _config)
+);
 
-var hosts = ['192.168.1.1', 'google.com', 'yahoo.com'];
-hosts.forEach(function(host){
-    ping.sys.<span class="apidocCodeKeywordSpan">probe</span>(host, function(isAlive){
-        var msg = isAlive ? 'host ' + host + ' is alive' : 'host ' + host + ' is dead';
-        console.log(msg);
-    });
-});
-```
+// Initial parser
+var parser = parserFactory.createParser(platform);
 
-##Tradition calls with configuration
+// Register events from system ping
+ping.once('error', function () {
 ...</pre></li>
     </ul>
 
