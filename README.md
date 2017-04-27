@@ -1,4 +1,7 @@
-# api documentation for  [ping (v0.2.2)](http://github.com/danielzzz/node-ping)  [![npm package](https://img.shields.io/npm/v/npmdoc-ping.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ping) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ping.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ping)
+# npmdoc-ping
+
+#### basic api documentation for  [ping (v0.2.2)](http://github.com/danielzzz/node-ping)  [![npm package](https://img.shields.io/npm/v/npmdoc-ping.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ping) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ping.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ping)
+
 #### a simple wrapper for ping
 
 [![NPM](https://nodei.co/npm/ping.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ping)
@@ -122,7 +125,8 @@
     "scripts": {
         "test": "grunt test"
     },
-    "version": "0.2.2"
+    "version": "0.2.2",
+    "bin": {}
 }
 ```
 
